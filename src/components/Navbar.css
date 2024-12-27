@@ -1,0 +1,48 @@
+nav {
+    display: flex;
+    justify-content: space-between; /* Aligns items left and right */
+    align-items: center;
+    background-color: #079922; /* Vibrant green */
+    color: white;
+    padding: 15px 30px;
+}
+
+nav h1 {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Change font family if needed */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px; /* Space between buttons */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Responsive Design for Navbar */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding-bottom: 10px; /* Add padding at bottom */
+    }
+
+    nav ul li {
+        display: block; /* Stack buttons on smaller screens */
+        margin-left: 0; /* Remove left margin */
+        margin-top: 10px; /* Add top margin for spacing */
+        text-align: center; /* Center align text */
+    }
+}

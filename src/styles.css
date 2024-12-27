@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif; /* You can change this font */
+    background-color: #C5CBE3; /* Light gray */
+    color: #333333; /* Dark gray */
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Aligns items left and right */
+    align-items: center;
+    background-color: #079922; /* Vibrant green */
+    color: white;
+    padding: 15px 30px;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px; /* Space between buttons */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: white; /* White background for sections */
+}
+
+button {
+    background-color: #F13C20; /* Strong red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c12b1e; /* Darker red on hover */
+}
+
+h2 {
+    color: #4056A1; /* Calming blue for headings */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Stack buttons on smaller screens */
+        margin-left: 0; /* Remove left margin */
+        margin-top: 10px; /* Add top margin for spacing */
+        text-align: center; /* Center align text */
+    }
+
+    nav {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding-bottom: 10px; /* Add padding at bottom */
+    }
+}
